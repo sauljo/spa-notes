@@ -81,6 +81,8 @@ import Button from '@/common/Button/Button.vue';
 import Todo from '../Todo/Todo';
 import ConfirmAction from '../ConfirmAction/ConfirmAction';
 
+import { deepCopy } from '@/utils/common';
+
 import shortid from 'shortid';
 
 export default {
@@ -179,6 +181,8 @@ export default {
   },
 
   created() {
+    console.log(this.canEditNote, this.canAddNote, this.note.name);
+    
     if (this.canEditNote || this.canAddNote) {
       this.setPreNote();
     }
@@ -282,7 +286,7 @@ export default {
     setPreNote() {
       let preNote;
       if (this.canEditNote) {
-        preNote = this.notes.find(item => item.id === this.idEdit);
+        preNote = deepCopy(this.notes).find(item => item.id === this.idEdit);
       } else {
         preNote = {
           id: shortid(),
