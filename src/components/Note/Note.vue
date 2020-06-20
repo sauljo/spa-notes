@@ -181,8 +181,6 @@ export default {
   },
 
   created() {
-    console.log(this.canEditNote, this.canAddNote, this.note.name);
-    
     if (this.canEditNote || this.canAddNote) {
       this.setPreNote();
     }
