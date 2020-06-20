@@ -15,5 +15,14 @@ npm run serve
 npm run build
 ```
 
+### Deploy
+
+./deploy.sh
+```
+
+### Demo App
+See [demo app](https://sauljo.github.io/spa-notes/).
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

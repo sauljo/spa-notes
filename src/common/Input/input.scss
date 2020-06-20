@@ -1,0 +1,22 @@
+$heightInput: 45px;
+
+.input {
+  width: calc(300px - 22px);
+  height: calc(#{$heightInput} - 22px);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 5px;
+}
+
+.input-small {
+  padding: 5px;
+}
+
+.input-large {
+  padding: 10px;
+}
+
+.input-error {
+  border-color: #f54242;
+}
+

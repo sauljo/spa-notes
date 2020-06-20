@@ -1,0 +1,48 @@
+.confirm_action {
+  width: 700px;
+  height: 400px;
+  background-color: #f0f0f0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  > div {
+    margin: 20px;
+  }
+
+  &__text {
+    > h1 {
+      font-weight: 300;
+      color: #2b3d53;
+    }
+  }
+
+  &__buttons {
+    > button {
+      margin: 0 20px;
+    }
+
+    .confirm_action__cancel {
+      &:hover {
+        background-color: #0d7eff;
+      }
+    }
+
+    .confirm_action__yes {
+      background-color: #d64343;
+      color: #fff;
+      &:hover {
+        background-color: #f51c1c;
+      }
+      
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .confirm_action {
+    width: 90%;
+  }
+}
