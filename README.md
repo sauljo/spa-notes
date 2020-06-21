@@ -1,4 +1,4 @@
-# spa-notes
+# todolist
 
 ## Project setup
 ```
@@ -16,6 +16,8 @@ npm run build
 ```
 
 ### Deploy
+```
+first set the variables in these files: 'deploy.sh', 'vue.config.js'
 
 ./deploy.sh
 ```
